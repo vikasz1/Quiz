@@ -1,0 +1,20 @@
+<resources>
+    <!--All the string resources come here including Questions and title -->
+    <string name="app_name">BIET Quizzers</string>
+    <string name="correct"><b>CORRECTNESS IS</b> \n
+						<b>%1$d</b> OUT OF 6</string>
+    <string name="true_text">true</string>
+    <string name="false_text">false</string>
+    <string name="correct_answer">That\'s correct</string>
+    <string name="wrong_answer">That\'s incorrect</string>
+<!--    Questions-->
+    <string name="a">1.The name ‘India’ derives from the river Indus.</string>
+    <string name="b">2.India has the second-largest population in the world. </string>
+    <string name="c">3.India is the 3rd largest country in the world.</string>
+    <string name="d">4.Thousands of languages are spoken all over India. </string>
+    <string name="e">5.The national symbol of India is the Snake.</string>
+    <string name="f">6.India is the 3rd largest English speaking country in the world.</string>
+    <string name="next_text">next</string>
+    <string name="prev_text">previous</string>
+
+</resources>
