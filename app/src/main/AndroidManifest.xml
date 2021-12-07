@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quiz">
         <activity
-            android:name=".MainActivity"
+            android:name=".Quiz2"
+            android:exported="true" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Quiz1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
