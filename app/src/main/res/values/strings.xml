@@ -1,12 +1,13 @@
 <resources>
     <!--All the string resources come here including Questions and title -->
     <string name="app_name">BIET Quizzers</string>
-    <string name="correct"><b>CORRECTNESS IS</b> \n
-						<b>%1$d</b> OUT OF 6</string>
+    <string name="correct"><b>You got</b> \n
+						<b>%1$d</b> out of 6</string>
     <string name="true_text">true</string>
     <string name="false_text">false</string>
     <string name="correct_answer">That\'s correct</string>
     <string name="wrong_answer">That\'s incorrect</string>
+
     <!--    Questions Quiz 1-->
     <string name="a1">1.The name ‘India’ derives from the river Indus.</string>
     <string name="b1">2.India has the second-largest population in the world. </string>
@@ -14,6 +15,7 @@
     <string name="d1">4.Thousands of languages are spoken all over India. </string>
     <string name="e1">5.The national symbol of India is the Snake.</string>
     <string name="f1">6.India is the 3rd largest English speaking country in the world.</string>
+
     <!--    Questions Quiz 2-->
     <string name="a2">1.Plate Tectonics Keep the Planet Comfortable.</string>
     <string name="b2">2.Earth is Completely Spherical. </string>
@@ -21,6 +23,31 @@
     <string name="d2">4.65% of the Earth’s Surface is Covered in Water. </string>
     <string name="e2">5.The Earth’s Atmosphere Extends to a Distance of 10 km.</string>
     <string name="f2">6.The Earth’s Molten Iron Core Creates a Electric Field.</string>
+
+    <!--    Questions Quiz 3-->
+    <string name="a3">1.Lord Buddha was born in Lumbini.</string>
+    <string name="b3">2.The largest grant of villages to temples and brahmana was given by the ruling dynasty known as <b>Guptas</b></string>
+    <string name="c3">3.Adigranth is the religious book of Hindus</string>
+    <string name="d3">4.The first President of the Republic of India was Dr. Rajendra Prasad</string>
+    <string name="e3">5.The French Revolution took place in the year 1789.</string>
+    <string name="f3">6.Silver metal was first used by the Indus people</string>
+
+    <!--    Questions Quiz 4-->
+    <string name="a4">1.India has largest deposits of <b>MICA</b> in the world.</string>
+    <string name="b4">2.India\'s first atomic reactor was </string>
+    <string name="c4">3.Adigranth is the religious book of Hindus</string>
+    <string name="d4">4.India\'s first ocean wave\'s energy project was launched in 1991</string>
+    <string name="e4">5.In a normal human body, the total number of red blood cells is 30 trillion.</string>
+    <string name="f4">6.In winter season do we need more fat?</string>
+
+    <!--    Questions Quiz 5-->
+    <string name="a5">1.C programs are converted into machine language with the help of a program called Editor.False</string>
+    <string name="b5">2.Spaces and commas are allowed in a variable name.false</string>
+    <string name="c5">3.The maximum value that an integer constant can have varies from one compiler to another.True</string>
+    <string name="d5">4.A real constant in C can be expressed in both Fractional and Exponential forms.true</string>
+    <string name="e5">5.Only character or integer can be used in switch statement.false</string>
+    <string name="f5">6.The return type of malloc function is void. False</string>
+
     <string name="next_text">next</string>
     <string name="prev_text">previous</string>
 

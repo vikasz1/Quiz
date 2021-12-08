@@ -10,7 +10,7 @@
         android:id="@+id/quiz1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="50dp"
         android:text="Quiz No. 1"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,13 +22,43 @@
         android:id="@+id/quiz2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="50dp"
         android:text="Quiz No. 2"
         android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quiz1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/quiz1" />
+
+    <Button
+        android:id="@+id/quiz3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Quiz No. 3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz2" />
+
+    <Button
+        android:id="@+id/quiz4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Quiz No. 4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz3" />
+
+    <Button
+        android:id="@+id/quiz5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Quiz No. 5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

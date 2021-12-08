@@ -1,21 +1,22 @@
 package com.vikas.quiz;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
 
-public class Quiz1 extends AppCompatActivity implements View.OnClickListener {
+public class Quiz4 extends AppCompatActivity implements View.OnClickListener {
+
     // setting up things
     private Button falseButton;
     private Button trueButton;
@@ -24,7 +25,6 @@ public class Quiz1 extends AppCompatActivity implements View.OnClickListener {
     private ImageView Image;
     private TextView questionTextView;
     private Button btnReset;
-    private Button main_menu;
     private int correct = 0;
     // to keep current question track
     private int currentQuestionIndex = 0;
@@ -33,27 +33,25 @@ public class Quiz1 extends AppCompatActivity implements View.OnClickListener {
             // array of objects of class Question
             // providing questions from string
             // resource and the correct ans
-            new Question(R.string.a1, true),
-            new Question(R.string.b1, true),
-            new Question(R.string.c1, false),
-            new Question(R.string.d1, true),
-            new Question(R.string.e1, false),
-            new Question(R.string.f1, false),
-
-    };
+            new Question(R.string.a4, true),
+            new Question(R.string.b4, true),
+            new Question(R.string.c4, true),
+            new Question(R.string.d4, true),
+            new Question(R.string.e4, true),
+            new Question(R.string.f4, true),};
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz1);
+        setContentView(R.layout.activity_quiz4);
         // setting up the buttons
         // associated with id
         falseButton = findViewById(R.id.false_button);
         trueButton = findViewById(R.id.true_button);
         nextButton = findViewById(R.id.next_button);
+//        prevButton = findViewById(R.id.prev_button);
         btnReset = findViewById(R.id.btnreset);
-        main_menu = findViewById(R.id.main_menu);
         // register our buttons to listen to
         // click events
         questionTextView = findViewById(R.id.answer_text_view);
@@ -61,7 +59,6 @@ public class Quiz1 extends AppCompatActivity implements View.OnClickListener {
         falseButton.setOnClickListener(this);
         trueButton.setOnClickListener(this);
         nextButton.setOnClickListener(this);
-        main_menu.setOnClickListener(this);
         btnReset.setOnClickListener(this);
     }
     public void nextQuestion(){
@@ -74,21 +71,21 @@ public class Quiz1 extends AppCompatActivity implements View.OnClickListener {
             // making buttons
             // invisible
             if (currentQuestionIndex == 6) {
-                questionTextView.setText(getString(R.string.correct, correct));
+                questionTextView.setText(getString(
+                        R.string.correct, correct));
                 nextButton.setVisibility(View.INVISIBLE);
 //                prevButton.setVisibility(View.INVISIBLE);
                 trueButton.setVisibility(View.INVISIBLE);
                 falseButton.setVisibility(View.INVISIBLE);
                 btnReset.setVisibility(View.VISIBLE);
-                main_menu.setVisibility(View.VISIBLE);
-
                 if (correct > 3) {
                     Image.setImageResource(R.drawable.happy);
-                    questionTextView.setText("You got " + correct + " correct out of 6");
+                    questionTextView.setText("CORRECTNESS IS " + correct + " " + "OUT OF 6");
                 }
-                    // showing correctness
+                // showing correctness
                 else
-                    Image.setImageResource(R.drawable.sad);
+                    Image.setImageResource(
+                            R.drawable.sad);
                 // if correctness<3 showing sad emoji
             }
             else {
@@ -116,17 +113,14 @@ public class Quiz1 extends AppCompatActivity implements View.OnClickListener {
                 nextQuestion();
                 break;
 
+
             case R.id.btnreset:
                 // Restarting the activity
                 Intent intent = getIntent();
                 finish();
                 startActivity(intent);
-            case R.id.main_menu:
-                Intent goback = new Intent(Quiz1.this,MainMenuActivity.class);
-                startActivity(goback);
 
-            case R.id.next_button:
-                nextQuestion();
+
         }
 
     }
@@ -145,25 +139,25 @@ public class Quiz1 extends AppCompatActivity implements View.OnClickListener {
             case 1:
                 // setting up image for each
                 // question
-                Image.setImageResource(R.drawable.india);
+                Image.setImageResource(R.drawable.gk);
                 break;
             case 2:
-                Image.setImageResource(R.drawable.india);
+                Image.setImageResource(R.drawable.gk);
                 break;
             case 3:
-                Image.setImageResource(R.drawable.india);
+                Image.setImageResource(R.drawable.gk);
                 break;
             case 4:
-                Image.setImageResource(R.drawable.india);
+                Image.setImageResource(R.drawable.gk);
                 break;
             case 5:
-                Image.setImageResource(R.drawable.india);
+                Image.setImageResource(R.drawable.gk);
                 break;
             case 6:
-                Image.setImageResource(R.drawable.india);
+                Image.setImageResource(R.drawable.gk);
                 break;
             case 7:
-                Image.setImageResource(R.drawable.india);
+                Image.setImageResource(R.drawable.gk);
                 break;
         }
     }
@@ -187,8 +181,6 @@ public class Quiz1 extends AppCompatActivity implements View.OnClickListener {
             toastMessageId = R.string.wrong_answer;
         }
 
-        Toast toast  = Toast.makeText(Quiz1.this, toastMessageId,Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.CENTER, 0, 0);
-        toast.show();
+        Toast.makeText(Quiz4.this, toastMessageId,Toast.LENGTH_SHORT).show();
     }
 }

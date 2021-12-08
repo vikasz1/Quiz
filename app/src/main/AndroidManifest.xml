@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Quiz">
         <activity
+            android:name=".Quiz5"
+            android:exported="true" />
+        <activity
+            android:name=".Quiz4"
+            android:exported="true" />
+        <activity
+            android:name=".Quiz3"
+            android:exported="true" />
+        <activity
             android:name=".Quiz2"
             android:exported="true" />
         <activity
@@ -24,11 +33,6 @@
         <activity
             android:name=".Quiz1"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
