@@ -1,5 +1,8 @@
 package com.vikas.quiz;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
@@ -11,11 +14,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity
-        implements View.OnClickListener {
+public class Quiz2 extends AppCompatActivity implements View.OnClickListener {
+
     // setting up things
     private Button falseButton;
     private Button trueButton;
@@ -32,12 +33,12 @@ public class MainActivity extends AppCompatActivity
             // array of objects of class Question
             // providing questions from string
             // resource and the correct ans
-            new Question(R.string.a, true),
-            new Question(R.string.b, true),
-            new Question(R.string.c, false),
-            new Question(R.string.d, true),
-            new Question(R.string.e, false),
-            new Question(R.string.f, false),
+            new Question(R.string.a2, true),
+            new Question(R.string.b2, false),
+            new Question(R.string.c2, true),
+            new Question(R.string.d2, false),
+            new Question(R.string.e2, false),
+            new Question(R.string.f2, false),
 
     };
 
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_quiz2);
         // setting up the buttons
         // associated with id
         falseButton = findViewById(R.id.false_button);
@@ -55,13 +56,11 @@ public class MainActivity extends AppCompatActivity
         btnReset = findViewById(R.id.btnreset);
         // register our buttons to listen to
         // click events
-        questionTextView
-                = findViewById(R.id.answer_text_view);
+        questionTextView = findViewById(R.id.answer_text_view);
         Image = findViewById(R.id.myimage);
         falseButton.setOnClickListener(this);
         trueButton.setOnClickListener(this);
         nextButton.setOnClickListener(this);
-//        prevButton.setOnClickListener(this);
         btnReset.setOnClickListener(this);
     }
     public void nextQuestion(){
@@ -85,7 +84,7 @@ public class MainActivity extends AppCompatActivity
                     Image.setImageResource(R.drawable.happy);
                     questionTextView.setText("CORRECTNESS IS " + correct + " " + "OUT OF 6");
                 }
-                    // showing correctness
+                // showing correctness
                 else
                     Image.setImageResource(
                             R.drawable.sad);
@@ -116,15 +115,7 @@ public class MainActivity extends AppCompatActivity
                 nextQuestion();
                 break;
 
-            case R.id.next_button:
-                nextQuestion();
-                nextButton.setImageResource(R.drawable.afteer);
-                break;
-//            case R.id.prev_button:
-//                if (currentQuestionIndex > 0) {
-//                    currentQuestionIndex = (currentQuestionIndex - 1);
-//                    updateQuestion();
-//                }
+
             case R.id.btnreset:
                 // Restarting the activity
                 if (Build.VERSION.SDK_INT >= 11) {
@@ -137,6 +128,8 @@ public class MainActivity extends AppCompatActivity
                     startActivity(intent);
                     overridePendingTransition(0, 0);
                 }
+            case R.id.next_button:
+                nextQuestion();
 
 
         }
@@ -157,25 +150,25 @@ public class MainActivity extends AppCompatActivity
             case 1:
                 // setting up image for each
                 // question
-                Image.setImageResource(R.drawable.flag);
+                Image.setImageResource(R.drawable.space);
                 break;
             case 2:
-                Image.setImageResource(R.drawable.flag);
+                Image.setImageResource(R.drawable.space);
                 break;
             case 3:
-                Image.setImageResource(R.drawable.flag);
+                Image.setImageResource(R.drawable.space);
                 break;
             case 4:
-                Image.setImageResource(R.drawable.flag);
+                Image.setImageResource(R.drawable.space);
                 break;
             case 5:
-                Image.setImageResource(R.drawable.flag);
+                Image.setImageResource(R.drawable.space);
                 break;
             case 6:
-                Image.setImageResource(R.drawable.flag);
+                Image.setImageResource(R.drawable.space);
                 break;
             case 7:
-                Image.setImageResource(R.drawable.flag);
+                Image.setImageResource(R.drawable.space);
                 break;
         }
     }
@@ -199,8 +192,8 @@ public class MainActivity extends AppCompatActivity
             toastMessageId = R.string.wrong_answer;
         }
 
-        Toast.makeText(MainActivity.this, toastMessageId,
-                        Toast.LENGTH_SHORT)
+        Toast.makeText(Quiz2.this, toastMessageId,
+                Toast.LENGTH_SHORT)
                 .show();
     }
 }

@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".Quiz1">
 
     <!--ImageView used for showing pictures along with questions-->
     <ImageView
@@ -26,7 +26,7 @@
         android:layout_margin="6dp"
         android:gravity="center"
         android:padding="10dp"
-        android:text="@string/a"
+        android:text="@string/a1"
         android:textColor="@android:color/black"
         android:textSize="20dp" />
 

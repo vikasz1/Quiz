@@ -7,13 +7,20 @@
     <string name="false_text">false</string>
     <string name="correct_answer">That\'s correct</string>
     <string name="wrong_answer">That\'s incorrect</string>
-<!--    Questions-->
-    <string name="a">1.The name ‘India’ derives from the river Indus.</string>
-    <string name="b">2.India has the second-largest population in the world. </string>
-    <string name="c">3.India is the 3rd largest country in the world.</string>
-    <string name="d">4.Thousands of languages are spoken all over India. </string>
-    <string name="e">5.The national symbol of India is the Snake.</string>
-    <string name="f">6.India is the 3rd largest English speaking country in the world.</string>
+    <!--    Questions Quiz 1-->
+    <string name="a1">1.The name ‘India’ derives from the river Indus.</string>
+    <string name="b1">2.India has the second-largest population in the world. </string>
+    <string name="c1">3.India is the 3rd largest country in the world.</string>
+    <string name="d1">4.Thousands of languages are spoken all over India. </string>
+    <string name="e1">5.The national symbol of India is the Snake.</string>
+    <string name="f1">6.India is the 3rd largest English speaking country in the world.</string>
+    <!--    Questions Quiz 2-->
+    <string name="a2">1.Plate Tectonics Keep the Planet Comfortable.</string>
+    <string name="b2">2.Earth is Completely Spherical. </string>
+    <string name="c2">3.Earth is Mostly Iron, Oxygen and Silicon.</string>
+    <string name="d2">4.65% of the Earth’s Surface is Covered in Water. </string>
+    <string name="e2">5.The Earth’s Atmosphere Extends to a Distance of 10 km.</string>
+    <string name="f2">6.The Earth’s Molten Iron Core Creates a Electric Field.</string>
     <string name="next_text">next</string>
     <string name="prev_text">previous</string>
 
