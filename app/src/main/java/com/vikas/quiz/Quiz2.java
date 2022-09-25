@@ -114,13 +114,11 @@ public class Quiz2 extends AppCompatActivity implements View.OnClickListener {
                 checkAnswer(true);
                 nextQuestion();
                 break;
-
-
             case R.id.btnreset:
                 // Restarting the activity
-                Intent intent = getIntent();
-                finish();
+                Intent intent =  new Intent(Quiz2.this,MainMenuActivity.class);
                 startActivity(intent);
+
             case R.id.next_button:
                 nextQuestion();
 

@@ -116,10 +116,11 @@ public class Quiz5 extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.btnreset:
                 // Restarting the activity
-                Intent intent = getIntent();
-                finish();
+                Intent intent =  new Intent(Quiz5.this,MainMenuActivity.class);
                 startActivity(intent);
 
+            case R.id.next_button:
+                nextQuestion();
 
         }
 

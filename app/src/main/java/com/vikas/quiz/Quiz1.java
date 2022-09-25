@@ -39,7 +39,6 @@ public class Quiz1 extends AppCompatActivity implements View.OnClickListener {
             new Question(R.string.d1, true),
             new Question(R.string.e1, false),
             new Question(R.string.f1, false),
-
     };
 
     @Override
@@ -118,8 +117,7 @@ public class Quiz1 extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.btnreset:
                 // Restarting the activity
-                Intent intent = getIntent();
-                finish();
+                Intent intent =  new Intent(Quiz1.this,MainMenuActivity.class);
                 startActivity(intent);
             case R.id.main_menu:
                 Intent goback = new Intent(Quiz1.this,MainMenuActivity.class);

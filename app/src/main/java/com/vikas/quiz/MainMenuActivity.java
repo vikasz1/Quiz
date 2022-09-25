@@ -50,6 +50,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
             case R.id.quiz5:
                 Intent intent5 = new Intent(MainMenuActivity.this,Quiz5.class);
                 startActivity(intent5);
+
                 break;
 
         }
